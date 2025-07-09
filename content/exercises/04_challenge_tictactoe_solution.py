@@ -3,7 +3,7 @@
 # Dies ist eine umfangreichere Übung, bei der Du Dein gesamtes bisheriges Wissen einbringen kannst: 
 # Wir programmieren den Klassiker Tic-Tac-Toe als interaktives Spiel.
 
-# Lege das Spielfeld als Liste von neun Feldern an. Ein leeres Feld soll einfach ein Leerzeichen sein.
+# Lege das Spielfeld als Liste von neun Feldern an. Ein leeres Feld soll ein Unterstrich sein.
 feld = ["_"] * 9
 
 # Wir brauchen eine Variable "winner", die am Anfang der leere String ist.
