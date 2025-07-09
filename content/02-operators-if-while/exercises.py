@@ -1,15 +1,3 @@
-# Übungen zu Operatoren
-
-# 1. Wende auf die Werte a und b die folgenden Operatoren an: +, -, *, /, // , **, % 
-# Gib die Rechnung und das Ergebnis mit print und einem f-String aus.
-a = 10
-b = 5
-
-# 2. Erweitere den Code aus 1. und schreibe den Typ des Ergebnisses dahinter.
-# Beispiel: 10 / 2 = 5.0 (Typ float)
-
-
-
 # Übungen zu if/else/elif
 
 # 1. Frage den Benutzer mit input nach seinem Lieblingstier. Falls die Eingabe != "Elefant" ist, soll 
