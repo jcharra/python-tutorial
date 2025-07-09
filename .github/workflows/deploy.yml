@@ -21,14 +21,18 @@ jobs:
       - name: Install the dependencies
         run: |
           python -m pip install -r requirements.txt
-      - name: Build the JupyterLite site
+      - name: Prepare flattened content
         run: |
-          jupyter lite build --contents . --output-dir dist
+          mkdir tmp-content
+          cp -r content/* tmp-content/
+
+      - name: Build JupyterLite
+        run: |
+          jupyter lite build --contents tmp-content --output-dir dist
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
-
   deploy:
     needs: build
     if: github.ref == 'refs/heads/main'
